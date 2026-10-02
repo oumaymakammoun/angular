@@ -12,4 +12,12 @@ export class MemberService {
   getALLMembers(){
     return this.http.get<MemberModel[]>('http://localhost:3500/members') ; //etape 2 5arjana requete
   }
+  addMemeber(member:MemberModel){
+  return this.http.post<void>('http://localhost:3500/members',member) ; 
+} //fleche 2
+deleteMember(id:string){
+  return this.http.delete<void>(`http://localhost:3500/members/${id}`) ;
 }
+
+}
+

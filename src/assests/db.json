@@ -1,8 +1,24 @@
 {
-    "members": [
-        { "id": "123", "name": "kammoun", "type": "teacher", "createdDate": "18/06/2024" },
-        { "id": "124", "name": "khaled", "type": "student", "createdDate": "18/06/2025" },
-        { "id": "125", "name": "ahmed", "type": "student", "createdDate": "18/06/2026" }
-    ]
-    
+  "members": [
+    {
+      "id": "123",
+      "name": "kammoun",
+      "type": "teacher",
+      "createdDate": "18/06/2024"
+    },
+    {
+      "id": "124",
+      "name": "khaled",
+      "type": "student",
+      "createdDate": "18/06/2025"
+    },
+    {
+      "cin": "0251489",
+      "name": "oumayma",
+      "type": "dr",
+      "createdDate": "10/20/2020",
+      "id": "2-3GYh1nbcc"
+    }
+  ],
+  "$schema": "./node_modules/json-server/schema.json"
 }

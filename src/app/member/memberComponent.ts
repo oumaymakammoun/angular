@@ -26,4 +26,9 @@ export class Member implements OnInit {
     });
   }
   displayedColumns: string[] = ['1', '2', '3', '4', '5'];
+  delete(id: string): void {
+    this.MS.deleteMember(id).subscribe(() => { ///////////
+      this.ngOnInit();
+    });
+  }
 }

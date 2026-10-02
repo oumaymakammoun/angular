@@ -1,6 +1,9 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { MemeberForm } from './memeber-form';
+import { MatFormFieldModule } from '@angular/material/form-field';
+import { MatInputModule } from '@angular/material/input';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 describe('MemeberForm', () => {
   let component: MemeberForm;
@@ -8,7 +11,7 @@ describe('MemeberForm', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [MemeberForm]
+      imports: [MemeberForm,MatFormFieldModule,MatInputModule,FormsModule,ReactiveFormsModule]
     })
     .compileComponents();
 
