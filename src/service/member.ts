@@ -18,6 +18,10 @@ export class MemberService {
 deleteMember(id:string){
   return this.http.delete<void>(`http://localhost:3500/members/${id}`) ;
 }
+getMemberById(id:string){
+  return this.http.get<MemberModel>(`http://localhost:3500/members/${id}`) ;
 
+
+}
 }
 
